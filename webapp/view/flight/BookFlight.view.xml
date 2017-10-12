@@ -1,0 +1,30 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.flight.BookFlight"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	busyIndicatorDelay="0">
+	<Page
+		title="{i18n>FlightDetails} {City}"
+		id="employeeResumePage"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+		<content>
+			<IconTabBar
+				id="iconTabBar"
+				headerBackgroundDesign="Transparent"
+				class="sapUiResponsiveContentPadding"
+				binding="{Resume}"
+				select="onTabSelect"
+				selectedKey="{view>/selectedTabKey}">
+				<items>
+					<IconTabFilter id="infoTab" text="Credit card information" key="Info">
+						<Text text="{i18n>Credit_card_information}" />
+						<Input id="inputPayment" />
+						<Button text="Confirm Payment" press="onPressConfirmPayment" />
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</mvc:View>

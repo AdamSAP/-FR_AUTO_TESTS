@@ -1,0 +1,10 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.Home"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="Book Flights" class="sapUiResponsiveContentPadding">
+		<content>
+			<Button id="employeeOverviewBtn" text="See available flights" press="onNavToFlightOverview" class="sapUiTinyMarginEnd"/>
+		</content>
+	</Page>
+</mvc:View>
